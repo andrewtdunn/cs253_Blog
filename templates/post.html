@@ -1,0 +1,39 @@
+<div class="post">
+  <div class="post-heading">
+    <div class="post-title">
+      <span class="article-title">{{p.subject}}</span>
+        <span class="byline">
+        by {{author}}
+        </span>
+    </div>
+
+    <div class="post-date">
+      {{p.created.strftime("%b %d, %Y")}}
+    </div>
+  </div>
+
+  <div class="post-content">
+    {{p._render_text | safe}}
+    <hr>
+  </div>
+  <div class="post-likes">
+    Likes({{p.likes}})
+    {% if not editable and loggedIn%}
+      {% if not isLiked %}
+      <span ><a class="icon-star-empty" href="/newlike/{{p.ref_id}}"></a></span>
+      {% else %}
+      <span ><a class="icon-star-full" href="/unlike/{{p.ref_id}}"></a></span>
+      {% endif %}
+    {% endif %}
+     {% if comment_number  >=0 %} | <span class="post-comment-number"><a class="post-comment-link" href="/blog/{{p.ref_id}}">Comments({{comment_number}})</a></span>{% endif %}
+    {% if editable %}
+    <span class="post-delete" >
+      <a class="icon-bin" href="/post/delete/{{p.ref_id}}"></a>
+   </span>
+   <span class="post-edit" >
+      <a class="icon-pencil" href="/post/edit/{{p.ref_id}}"></a>
+   </span>
+   {% endif %}
+  </div>
+
+</div>

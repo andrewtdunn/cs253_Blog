@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if post_id %}
+    <h2>edit post</h2>
+  {% else %}
+    <h2>new post</h2>
+  {% endif %}
+
+  <form id="post-form" method="post" action="/blog/makepost">
+    <label>
+      <div>subject</div>
+      <input type="text" name="subject" value="{{subject}}">
+    </label>
+
+    <label>
+      <div>blog</div>
+      <textarea id="post-textarea" name="content">{{content}}</textarea>
+    </label>
+    <input name="post_id" type="hidden" value="{{post_id}}">
+
+    <div class="error">{{error}}</div>
+
+    <input type="submit">
+  </form>
+  {% if post_id %}
+  <a href="/blog/{{post_id}}" class="icon-cancel-circle"></a>
+  {% endif %}
+{% endblock %}

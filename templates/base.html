@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+
+    <title>CS 253 Blog</title>
+  </head>
+
+  <body>
+    <a href="/blog" class="main-title">
+      CS 253 Blog
+    </a>
+
+    <div class="login-area">
+      {% if user %}
+        {{user.name}} (<a href="/logout" class="login-link">Log Out</a>)
+      {% else %}
+       <a href="/login" class="login-link">Log In</a>
+       |
+       <a href="/signup" class="login-link">Sign Up</a>
+       {% endif %}
+     </div>
+
+     <div id="content">
+       {% block content %}
+       {% endblock %}
+     </div>
+  </body>
+
+</html>

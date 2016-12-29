@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if curr_user %}
+  <a href="/blog/makepost" class="icon-plus"></a>
+  {% endif %}
+  <br>
+  <div id="main-page">
+  {% for p in posts %}
+    {{ p.render(curr_user) | safe }}
+    <br><br>
+  {% endfor %}
+  </div>
+{% endblock %}

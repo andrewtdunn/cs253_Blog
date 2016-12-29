@@ -1,0 +1,15 @@
+<div class="comment">
+  <div class="comment-byline">
+    <span class="comment-time">{{comment.created.strftime("On %A %b %d, %Y at %-I:%M %p")}}</span><span class="comment-name"> {{author_name}}</span> said:
+  </div>
+  <p>{{comment.content}}</p>
+  {% if editable %}
+   <span class="comment-delete" >
+      <a class="icon-bin" href="/comment/delete/{{comment.key().id()}}" alt="delete comment"></a>
+   </span>
+   <span class="comment-edit" >
+      <a class="icon-pencil" href="/comment/edit/{{comment.key().id()}}" alt="edit comment"></a>
+   </span>
+   {% endif %}
+  <hr>
+</div>

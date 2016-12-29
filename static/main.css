@@ -1,0 +1,283 @@
+@font-face {font-family: 'EurostileLT-BoldExtendedTwo';src: url('/static/fonts/2D185A_0_0.eot');src: url('/static/fonts/2D185A_0_0.eot?#iefix') format('embedded-opentype'),url('/static/fonts/2D185A_0_0.woff2') format('woff2'),url('/static/fonts/2D185A_0_0.woff') format('woff'),url('/static/fonts/2D185A_0_0.ttf') format('truetype');}
+
+body {
+  position: relative;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #333;
+  background-image: url("/static/grid.png");
+  background-attachment: fixed;
+}
+
+.login-area {
+  font-size: 13px;
+  color: gray;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+login-link{
+  color: gray;
+  text-decoration: none;
+}
+
+login-link:visited {
+  color: gray;
+}
+
+login-link:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-family:EurostileLT-BoldExtendedTwo;
+  font-size: 24px;
+  font-weight: bold;
+  font-color:red ;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+label + label {
+  margin-top: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 500px;
+  font-size: 20px;
+  padding: 2px;
+
+}
+
+input[type=text] {
+  font-family: monospace;
+}
+
+
+
+#post-textarea, #comment-textarea {
+  width: 500px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+#post-textarea {
+  height: 400px;
+}
+
+
+
+.main-title {
+  display: block;
+  color: #222;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+#main-page{
+  padding-top: 15px;
+}
+
+#main-page .post, #post-page {
+  background-color: white;
+  border: 5px solid rgba(255,0,0,0.25);
+  padding: 5px;
+  border-radius: 15px;
+ }
+
+.post + .post {
+  margin-top: 15px;
+}
+
+.post-heading {
+  position: relative;
+  border-bottom: 2px solid rgba(0,0,255,0.25);
+}
+
+hr{
+  border-top: 2spx solid rgba(0,0,255,0.25);
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main-title, .article-title{
+  font-family:EurostileLT-BoldExtendedTwo;
+  text-transform: uppercase;
+  text-shadow: -1px 0 1px rgb(30,242,241) , 1px 0 1px rgb(246,5,10);
+}
+
+.post-date {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #999;
+}
+
+.post-edit, .comment-edit {
+  position: absolute;
+  right: 20px;
+  color: #999;
+}
+
+.post-delete, .comment-delete {
+  position: absolute;
+  right: 50px;
+  color: #999;
+}
+
+.comment-edit, .comment-delete {
+    margin-top: -12px;
+}
+
+.byline {
+  font-weight: normal;
+  font-size: 0.5em;
+}
+
+.post-content {
+  margin-top: 5px;
+}
+
+.post-plus-one, .post-comment-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: gray;
+}
+
+.post-plus-one:hover, .post-comment-link:hover {
+  color: red;
+}
+
+.post-plus-one:active, .post-comment-link:active {
+  text-decoration: underline;
+}
+
+.comment-time {
+  font-weight: normal;
+}
+
+.comment-byline{
+  color: gray;
+}
+
+.comment-name {
+  color: black;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/static/fonts/icomoon.eot?3im5u1');
+  src:  url('/static/fonts/icomoon.eot?3im5u1#iefix') format('embedded-opentype'),
+    url('/static/fonts/icomoon.ttf?3im5u1') format('truetype'),
+    url('/static/fonts/icomoon.woff?3im5u1') format('woff'),
+    url('/static/fonts/icomoon.svg?3im5u1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil, .icon-star-empty, .icon-star-full, .icon-bin, .icon-plus, .icon-cancel-circle{
+  text-decoration: none;
+  color:gray;
+}
+.icon-pencil:before {
+  content: "\e905";
+  cursor: pointer;
+}
+
+.icon-pencil:hover:before {
+  color: purple;
+}
+
+.icon-star-empty:before {
+  content: "\e9d7";
+  cursor: pointer;
+}
+.icon-star-empty:hover:before {
+  color:red;
+}
+.icon-star-full:before {
+  content: "\e9d9";
+  cursor: pointer;
+}
+
+.icon-bin:before {
+  content: "\e9ac";
+  cursor: pointer;
+}
+
+.icon-bin:hover:before, .icon-cancel-circle:hover:before  {
+  color: red;
+}
+
+.icon-plus:hover:before  {
+  color: green;
+}
+
+
+.icon-plus {
+  margin-bottom: 10px;
+}
+
+.icon-plus:before {
+  content: "\ea0a";
+  background-color: white;
+  border: 5px solid rgba(255,0,0,0.25);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.icon-cancel-circle:before {
+  content: "\ea0d";
+  font-size:1.5em;
+}
+
+.icon-cancel-circle{
+  position: relative;
+  top:-28px;
+  left: 485px;
+}
