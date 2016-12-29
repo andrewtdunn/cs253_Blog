@@ -218,9 +218,14 @@ hr{
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-pencil, .icon-star-empty, .icon-star-full, .icon-bin, .icon-plus, .icon-cancel-circle{
+.icon-pencil, .icon-star-empty, .icon-bin, .icon-plus, .icon-cancel-circle{
   text-decoration: none;
   color:gray;
+}
+
+.icon-star-full{
+  text-decoration: none;
+  color:gold;
 }
 .icon-pencil:before {
   content: "\e905";
@@ -236,7 +241,7 @@ hr{
   cursor: pointer;
 }
 .icon-star-empty:hover:before {
-  color:red;
+  color:gold;
 }
 .icon-star-full:before {
   content: "\e9d9";
