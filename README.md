@@ -2,7 +2,7 @@
 
 [Deployed Project Here](https://udacity-cs253-blog-153717.appspot.com/)
 
- Multi-user blog built using google app engine. Enables user to create different user profiles.
+ Multi-user blog built using google app engine. 
 
  Includes security functionality such that logged in users can only create, update, or delete their own posts.
 
