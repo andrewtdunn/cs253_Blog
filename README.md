@@ -1,3 +1,5 @@
+![alt text](https://github.com/andrewtdunn/cs253_Blog/blob/master/static/tblog.png "screenshot")
+
 ##Multi-User Blog
 
 [Deployed Project Here](https://udacity-cs253-blog-153717.appspot.com/)
@@ -8,8 +10,6 @@
 
  Uses [jinja2](http://jinja.pocoo.org/) for templating, which is built into google app engine.
 
-
-![alt text](https://github.com/andrewtdunn/cs253_Blog/blob/master/static/tblog.png "screenshot")
 
 
 ##Dependencies for Development
