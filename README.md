@@ -9,6 +9,7 @@
  Uses [jinja2](http://jinja.pocoo.org/) for templating, which is built into google app engine.
 
 
+![alt text](https://github.com/andrewtdunn/cd253_Blog/static/tblog.png "screenshot")
 
 
 ##Dependencies for Development
